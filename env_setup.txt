@@ -1,0 +1,12 @@
+conda create -n medsam python=3.10 -y
+conda activate medsam
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+pip install requests numpy matplotlib Pillow transformers accelerate
+conda install -n medsam ipykernel --update-deps --force-reinstall
+
+pip install nibabel
+pip install monai
+
+pip install SimpleITK
+pip install scikit-image
+pip install connected-components-3d
